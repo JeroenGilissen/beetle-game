@@ -17,5 +17,21 @@ namespace BeetleGame
         //      bool Right
         //      bool Up 
         //      bool IsVisible
+        public Beetle(Canvas canvas, int x, int y, int size)
+        {
+            X = x;
+            Y = y; 
+            Size = size;
+            Up = true;
+            Right = true;
+        }
+
+        public double Speed { get; set; }
+        public int Size { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
+        public bool Right { get; set; }
+        public bool Up { get; set; }
+        public bool IsVisible { get; set; }
     }
 }

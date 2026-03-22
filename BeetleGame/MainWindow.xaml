@@ -9,18 +9,24 @@
         Title="ExtraoefeningH10" Height="650" Width="950">
 
     <Grid>
-        
+
         <Label Content="Speed cm/s" HorizontalAlignment="Left" Height="24" Margin="37,68,0,0" VerticalAlignment="Top" Width="93"/>
-        <Label Name="speedLabel" Content="0.5" HorizontalAlignment="Left" Height="24" Margin="462,64,0,0" VerticalAlignment="Top" Width="44"/>
-        <Label Content="Size in pixels" HorizontalAlignment="Left" Margin="37,146,0,0" VerticalAlignment="Top"/>
-        
+        <Slider x:Name="speedSlider" HorizontalAlignment="Left" Margin="142,68,0,0" VerticalAlignment="Top" Width="300" Minimum="0.5" Maximum="10" Value="0.5" TickFrequency="0.1" IsSnapToTickEnabled="True"/>
+        <Label x:Name="speedLabel" Content="0.5" HorizontalAlignment="Left" Height="24" Margin="462,64,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label  Content="Size in pixels" HorizontalAlignment="Left" Margin="37,146,0,0" VerticalAlignment="Top"/>
+        <Slider Name="sizeSlider" HorizontalAlignment="Left" Margin="142,146,0,0" VerticalAlignment="Top" Width="300" Minimum="10" Maximum="20" Value="10" TickFrequency="2" IsSnapToTickEnabled="True"/>
+
         <Label Content="10" HorizontalAlignment="Left" 
                Name="sizeLabel" Margin="470,138,0,0" VerticalAlignment="Top"/>
         <Canvas HorizontalAlignment="Left" Height="356" 
-                Name ="paperCanvas" Background ="LightGray" Margin="47,218,0,0" VerticalAlignment="Top" Width="536"/>
-        
-
-        <Label Name="messageLabel" Content="" HorizontalAlignment="Left" Height="61" Margin="616,513,0,0" VerticalAlignment="Top" Width="218"/>
+                x:Name ="paperCanvas" Background ="LightGray" Margin="47,218,0,0" VerticalAlignment="Top" Width="536"/>
+        <Button x:Name="StartStopButton" Content="Start" HorizontalAlignment="Left" Margin="775,66,0,0" VerticalAlignment="Top" Width="75" Click="StartStopButton_Click"/>
+        <Button x:Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Margin="775,131,0,0" VerticalAlignment="Top" Width="75" Click="ResetButton_Click"/>
+        <Button x:Name="UpButton" Content="Up" HorizontalAlignment="Left" Margin="754,309,0,0" VerticalAlignment="Top" Width="74" Click="UpButton_Click" />
+        <Button x:Name="DownButton" Content="Down" HorizontalAlignment="Left" Margin="754,411,0,0" VerticalAlignment="Top" Width="74" Click="DownButton_Click" />
+        <Button x:Name="LeftButton" Content="Left" HorizontalAlignment="Left" Margin="666,358,0,0" VerticalAlignment="Top" Width="74" Click="LeftButton_Click" />
+        <Button x:Name="RightButton" Content="Right" HorizontalAlignment="Left" Margin="844,353,0,0" VerticalAlignment="Top" Width="74" Click="RightButton_Click" />
+        <Label Name="messageLabel" Content="" HorizontalAlignment="Left" Height="61" Margin="610,547,0,0" VerticalAlignment="Top" Width="218"/>
 
 
     </Grid>
