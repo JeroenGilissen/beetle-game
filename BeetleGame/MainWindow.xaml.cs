@@ -42,13 +42,13 @@ namespace BeetleGame
         private void StartStopButton_Click(object sender, RoutedEventArgs e)
         {
             
-            if(StartStopButton.Name == "Start")
+            if(StartStopButton.Content == "Start")
             {
-                StartStopButton.Name = "Stop";
+                StartStopButton.Content = "Stop";
             }
             else
             {
-                StartStopButton.Name = "Start";
+                StartStopButton.Content = "Start";
             }
         }
 
